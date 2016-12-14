@@ -53,7 +53,6 @@ public class Request implements ServletRequest {
     }
     System.out.print(request.toString());
     uri = parseUri(request.toString());
-    System.out.println("uri="+uri);
   }
 
   /* implementation of the ServletRequest*/

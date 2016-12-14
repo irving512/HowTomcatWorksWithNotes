@@ -58,6 +58,8 @@ public class HttpServer1 {
         // check if this is a request for a servlet or a static resource
         // a request for a servlet begins with "/servlet/"
         if (request.getUri().startsWith("/servlet/")) {
+        	//此处是与第一章程序不一样之处
+        	//当请求以/servlet/开头时，则认为该请求为servlet请求
           ServletProcessor1 processor = new ServletProcessor1();
           processor.process(request, response);
         }

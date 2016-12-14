@@ -13,11 +13,12 @@ public class ServletProcessor1 {
 
   public void process(Request request, Response response) {
 
+	  //获取需要加载的Servlet类名
     String uri = request.getUri();
     String servletName = uri.substring(uri.lastIndexOf("/") + 1);
 //    System.out.println("servletName="+servletName);
     URLClassLoader loader = null;
-
+    
     try {
       // create a URLClassLoader
       URL[] urls = new URL[1];

@@ -42,6 +42,7 @@ public class ServletProcessor2 {
     }
 
     Servlet servlet = null;
+    //改进之处，使用了Facade模式
     RequestFacade requestFacade = new RequestFacade(request);
     ResponseFacade responseFacade = new ResponseFacade(response);
     try {
